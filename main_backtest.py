@@ -3,7 +3,7 @@ import datetime, pandas as pd
 import numpy as np
 
 client = Client()
-start = datetime.datetime(2025, 3, 31)
+start = datetime.datetime(2025, 6, 31)
 end = datetime.datetime(2025, 6, 30)
 
 klines = client.get_historical_klines(
@@ -26,7 +26,7 @@ df['Fechamento'] = df['Fechamento'].astype(float)
 df['Abertura'] = df['Abertura'].astype(float)
 
 # Estratégia de Dollar Cost Averaging (DCA)
-investimento_por_compra = 3.00  # R$ 3,00 a cada 1 horas
+investimento_por_compra = 10.00  # R$ 3,00 a cada 1 horas
 total_investido = 0
 bitcoin_acumulado = 0
 historico_compras = []
