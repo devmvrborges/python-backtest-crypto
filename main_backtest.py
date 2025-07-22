@@ -3,7 +3,7 @@ import datetime, pandas as pd
 import numpy as np
 
 client = Client()
-start = datetime.datetime(2025, 3, 31)  # Mudei para um período passado para ter dados reais
+start = datetime.datetime(2025, 3, 31)
 end = datetime.datetime(2025, 6, 30)
 
 klines = client.get_historical_klines(
